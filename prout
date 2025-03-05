@@ -1,0 +1,28 @@
+2. What We Need for Iron Farm Test
+
+To make the Iron Farm test as complete as possible, we need the following:
+	1.	Basic Farm Information
+	•	Farm Name : Iron Farm - Early game
+	•	Farm Category : Very Early Game
+	•	Short description : Simple Day 1 Iron Farm
+	•	Estimated difficulty : Very Easy
+	•	Estimated efficiency : ±300/hr
+	2.	Images
+	•	Where to store? → /images/ folder inside the project
+
+	•	early-ironfarm-img1.png
+
+	3.	Video Tutorial
+
+	•	Example: "https://www.youtube.com/watch?v=NKyuMmWGJd8"
+	4.	Text-Based Tutorial ( do it from the video )
+	•	Step-by-step instructions
+	•	Materials list
+	•	Required tools
+	•	Setup steps
+	5.	Schematic File
+        /schematics/early_ironfarm.schematic
+	6.	Farm Efficiency
+	•	Iron Output per hour ±300
+	•	Number of Villagers required 2
+	•	Automation Level Fully AFK

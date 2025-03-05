@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minecraft Farms</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="sidebar">
+  <div class="sidebar-header">
+    <h2>Minecraft Tracker</h2>
+  </div>
+  <ul class="sidebar-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="items.html">Items</a></li>
+    <li><a href="farms.html" class="active">Farms</a></li>
+    <li><a href="progress.html">Progress</a></li>
+    <li><a href="settings.html">Settings</a></li>
+  </ul>
+</nav>
+
+<main class="main-content">
+  <header class="main-header">
+    <h1>Farms</h1>
+    <p>Discover different types of farms and their efficiencies.</p>
+  </header>
+
+  <section class="farms-grid">
+    <div class="farm-card" onclick="openFarmPage('stone_generator.html')">
+      <div class="farm-image" style="background-image: url('images/stone_farm.jpg');"></div>
+      <div class="farm-info">
+        <h2>Stone Generator</h2>
+        <p>Simple cobblestone and stone generator using water & lava.</p>
+      </div>
+    </div>
+    
+    <div class="farm-card" onclick="openFarmPage('iron_farm.html')">
+      <div class="farm-image" style="background-image: url('images/iron_farm.jpg');"></div>
+      <div class="farm-info">
+        <h2>Iron Farm</h2>
+        <p>Automated farm for infinite iron from golems.</p>
+      </div>
+    </div>
+
+    <div class="farm-card" onclick="openFarmPage('xp_farm.html')">
+      <div class="farm-image" style="background-image: url('images/xp_farm.jpg');"></div>
+      <div class="farm-info">
+        <h2>XP Farm</h2>
+        <p>Gain experience quickly using mob grinders.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+  function openFarmPage(url) {
+    window.location.href = url;
+  }
+</script>
+
+</body>
+</html>

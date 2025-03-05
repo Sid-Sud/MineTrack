@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Minecraft: Items</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="sidebar">
+  <div class="sidebar-header">
+    <h2>Minecraft Tracker</h2>
+  </div>
+  <ul class="sidebar-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="items.html" class="active">Items</a></li>
+    <li><a href="farms.html">Farms</a></li>
+    <li><a href="progress.html">Progress</a></li>
+    <li><a href="settings.html">Settings</a></li>
+  </ul>
+</nav>
+
+<main class="main-content">
+  <header class="main-header">
+    <h1>All Items</h1>
+    <input 
+      type="text" 
+      id="searchBar" 
+      placeholder="Search items..."
+      oninput="filterItems()"
+    />
+  </header>
+
+  <section class="table-container">
+    <table id="itemsTable">
+      <thead>
+        <tr>
+          <th style="opacity: 0.9;">Name</th>
+          <th style="opacity: 0.8;">Category</th>
+          <th style="opacity: 0.8;">Farmable</th>
+          <th style="opacity: 0.8;">Method</th>
+          <th style="opacity: 0.8;">Built?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Populated by itemsScript.js -->
+      </tbody>
+    </table>
+  </section>
+</main>
+
+<!-- Modal for item details -->
+<div id="itemModal" class="modal-overlay hidden">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal()">✕</span>
+    <h2 id="modalItemName"></h2>
+    <p id="modalCategory"></p>
+    <p id="modalFarmable"></p>
+    <p id="modalMethod"></p>
+    <p id="modalBiomeReq"></p>
+    <p id="modalStructureReq"></p>
+    <p id="modalSpawnConditions"></p>
+    <p id="modalDependencies"></p>
+    <p id="modalRarity"></p>
+    <p id="modalNotes"></p>
+    <!-- You can add more fields if needed. -->
+
+    <button onclick="closeModal()">Close</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script src="itemsScript.js"></script>
+</body>
+</html>
